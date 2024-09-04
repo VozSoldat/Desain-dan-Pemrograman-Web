@@ -20,7 +20,7 @@ h2{
 }
 
 body{
-    background: url(img/tree1.webp), url(img/field1.webp);
+    background: url(img/tree1.avif), url(img/field1.jpg);
     background-repeat: no-repeat, repeat ;
     color: white;
 }
