@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tugas Besar 1</title>
+    </head>
+
+    <body>
+        <form action="post">
+        <fieldset>
+            <legend>Data Mahasiswa</legend>
+                Nama <input type="text" name="nama" >
+                <br><br>
+                Email <input type="text" name="email">
+                <br><br>
+                Tanggal Lahir <input type="date" name="tgl">
+                <br><br>
+                Jenis Kelamin
+                    <select name="jenis-kelamin" id="jenis-kelamin">
+                        <option value="Laki-laki">Laki-laki</option>
+                        <option value="Perempuan">Perempuan</option>
+                    </select> 
+
+                <br><br>
+                Alamat 
+                <br>
+                <textarea name="alamat" id="alamat" cols="50" rows="10"></textarea>
+
+            </fieldset>
+            <fieldset>
+                <legend>Komentar</legend>
+                Dari mana Anda mengetahui buku ini? 
+                    <select name="buku" id="buku">
+                        <option value="Google">Google</option>
+                        <option value="Facebook">Facebook</option>
+                    </select>
+                
+                <br><br>
+                Bagaimana menurut Anda buku ini
+                <br>
+                <input type="radio" name="menurut" value="Biasa" checked>Biasa 
+                <input type="radio" name="menurut" value="Bagus">Bagus 
+                <input type="radio" name="menurut" value="Menarik">Menarik
+
+                <br><br>
+                Komentar Anda
+                <br>
+                <textarea name="komentar" id="komentar" cols="50" rows="10"></textarea>
+                <br><br>
+
+                <input type="checkbox" value="kirim-email"> Kirim ke Email bila ada infor baru.
+            </fieldset>
+        </form>
+    </body>
+</html>
