@@ -4,15 +4,17 @@ html, body{
 }
 
 body{
-    
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #ddd;
+    background-color: #111;
     line-height: 1.65;
     padding-bottom: 1000px;
 }
 
 /* Latihan 1 */
 .container-satu{
+    color: #bbc;
+    
+    background: url(img/gothic.jpg);
     width: 800px;
     margin: 50px auto;
     background-color: #fff;
