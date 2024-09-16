@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Tugas Besar 2</title>
+    </head>
+
+    <body>
+        <script>
+            function checkNull() {
+                if(document.getElementById("firstname").value == "" || document.getElementById("lastname").value == "") {
+                    alert("Mohon isi semua kolom");
+                    return true;
+                }else{
+                    return false;
+                }
+            }
+            function assignAndAlert() {
+                var firstname = document.getElementById("firstname").value;
+                var lastname = document.getElementById("lastname").value;
+                if (checkNull() == true) {
+                    // checkNull(); tidak perlu
+                }else{
+                    alert("Selamat datang, " + firstname + " " + lastname);
+                }
+            }
+        </script>
+
+        <form>
+            <label for="firstname">First Name: <input type="text" name="firstname" id="firstname"></label>
+            <br><br>
+            <label for="lastname">Last Name: <input type="text" name="lastname" id="lastname"></label>
+            <br><br>
+
+            <button onclick="assignAndAlert()">Submit</button>
+        </form>
+    </body>
+</html>
