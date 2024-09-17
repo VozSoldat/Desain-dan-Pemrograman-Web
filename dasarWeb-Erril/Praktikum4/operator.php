@@ -46,5 +46,19 @@ echo "Hasil Or: "; var_dump($hasilOr); echo "<br>";
 echo "Hasil Not A: "; var_dump($hasilNotA); echo "<br>";
 echo "Hasil Not B: "; var_dump($hasilNotB); echo "<br>";
 
+echo "<br><br>";
+
+$a +=$b;
+echo "Variabel a +=: {$a} <br>";
+$a -= $b;
+echo "Variabel a -=: {$a} <br>";
+$a *= $b;
+echo "Variabel a *=: {$a} <br>";
+$a /= $b;
+echo "Variabel a /=: {$a} <br>";
+$a %= $b;
+echo "Variabel a %=: {$a} <br>";
+
+
 
 ?>
