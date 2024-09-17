@@ -67,6 +67,14 @@ $hasilTidakIdentik = $a !== $b;
 echo "Hasil Identik:"; var_dump($hasilIdentik); echo" <br>";
 echo "Hasil Tidak Identik:"; var_dump($hasilTidakIdentik); echo" <br>";
 
+echo "<br><br>";
+
+echo "Terdapat  restoran dengan 45 kursi. Suatu malam, 28 kursi telah terisi. Berapa persen kursi yang masih kosong? <br>";
+
+$persenKosong = (45-28)/45*100;
+
+echo $persenKosong . "%";
+
 
 
 ?>
