@@ -61,4 +61,52 @@ foreach ($nilaiSiswa as $nilai) {
     }else echo "Nilai: $nilai (Lulus)<br>";
 }
 
+echo "<br><br>";
+
+// tugas soal no4.6
+echo "Tugas soal no4.6<br>";
+
+$nilaiSiswa = [85, 92, 78, 64, 90, 75, 88, 79, 70, 96];
+$n = count($nilaiSiswa);
+$temp; $isSwapped;
+
+for($i = 0; $i < $n-1; $i++) {
+    $isSwapped = False;
+
+    for($j = 0; $j < $n-$i-1; $j++) {
+        if($nilaiSiswa[$j] > $nilaiSiswa[$j+1]) {
+
+            $temp = $nilaiSiswa[$j];
+            $nilaiSiswa[$j] = $nilaiSiswa[$j+1];
+            $nilaiSiswa[$j+1] = $temp;
+            $isSwapped = True;
+        }
+    }
+
+    if(!$isSwapped) {
+        break;
+    }
+}
+
+echo "Setelah sorted <br>";
+for ($i=0; $i < count($nilaiSiswa); $i++) { 
+    echo "Nilai: $nilaiSiswa[$i]<br>";
+}
+
+// larang ikut serta nilai dua tertinggi dan dua terendah
+// dan hitung rata-rata
+$jumlahNilai=0; $jumlahSiswaYangDihitung=0;
+for ($i=0; $i < count($nilaiSiswa); $i++) { 
+    if ($i >= 2 OR $i < count($nilaiSiswa)-2) {
+        $jumlahNilai += $nilaiSiswa[$i];
+        $jumlahSiswaYangDihitung++;
+    }
+}
+
+$rataRata = $jumlahNilai / $jumlahSiswaYangDihitung;
+echo "Rata-rata: ".$rataRata."<br>";
+
+
+
+
 ?>
