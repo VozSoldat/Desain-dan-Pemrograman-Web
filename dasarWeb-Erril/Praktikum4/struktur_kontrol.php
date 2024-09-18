@@ -106,7 +106,20 @@ for ($i=0; $i < count($nilaiSiswa); $i++) {
 $rataRata = $jumlahNilai / $jumlahSiswaYangDihitung;
 echo "Rata-rata: ".$rataRata."<br>";
 
+echo "<br><br>";
 
+// tugas soal no4.7
+echo "Tugas soal no4.7<br>";
+
+$jumlahHargaCustomer = 120000;
+$totalSetelahDiskon;
+$diskon = 0.2;
+if ($jumlahHargaCustomer >= 100000) {
+    $totalSetelahDiskon = $jumlahHargaCustomer - ($diskon * $jumlahHargaCustomer);
+}
+
+echo "Total sebelum diskon: ".$jumlahHargaCustomer . "<br>";
+echo "Total setelah diskon: ".$totalSetelahDiskon . "<br>";
 
 
 ?>
