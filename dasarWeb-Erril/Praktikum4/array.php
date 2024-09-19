@@ -43,7 +43,6 @@ $daftarNilai = [
         ['Alice', 90],
         ['Bob', 88],
         ['Charlie', 75],
-        ,
     ],
     'Kimia' => [
         ['Alice', 92],
@@ -59,4 +58,17 @@ echo "Daftar nilai mahasiswa dalam mata kuliah $mataKuliah: <br>";
 foreach ($daftarNilai[$mataKuliah] as $nilai) {
     echo "Nama: {$nilai[0]}, Nilai: {$nilai[1]} <br>";
 }
+
+echo "<br><br>";
+
+// soal cerita guru
+echo "Soal cerita guru: <br>";
+echo "Daftar nilai mahasiswa: <br>";
+$daftarNilai=[['Alice', 85], ['Bob', 92], ['Charlie', 78], ['David', 64], ['Eva', 90]];
+
+foreach ($daftarNilai as $siswa) {
+    echo "Siswa: {$siswa[0]}, Nilai: {$siswa[1]} <br>";
+}
+
+
 ?>
