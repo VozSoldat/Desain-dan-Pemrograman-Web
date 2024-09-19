@@ -121,5 +121,13 @@ if ($jumlahHargaCustomer >= 100000) {
 echo "Total sebelum diskon: ".$jumlahHargaCustomer . "<br>";
 echo "Total setelah diskon: ".$totalSetelahDiskon . "<br>";
 
+echo "<br><br>";
+
+// tugas soal no4.8
+echo "Tugas soal no4.8<br>";
+$total_poin = 520;
+echo "Total skor pemain adalah $total_poin <br>";
+$hadiah = ($total_poin > 500) ? "YA." : "TIDAK.";
+echo "Apakah pemain mendapatkan hadiah tambahan? $hadiah <br>";
 
 ?>
