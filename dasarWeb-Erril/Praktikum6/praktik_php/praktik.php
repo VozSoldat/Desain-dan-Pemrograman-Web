@@ -1,20 +1,11 @@
 <?php 
-// no3
-function perkenalan($nama, $salam="Assalamualaikum"){
-    echo $salam.", ";
-    echo "Perkenalkan, nama saya " . $nama . " <br>";
-    echo "Senang berkenalan dengan Anda <br>";
+// no4
+// membuat fungsi
+function hitungMundur($thn_lahir, $thn_sekarang){
+    $umur = $thn_sekarang - $thn_lahir;
+    return $umur;
 }
 
-// memanggil fungsi yang sudah dibuat
-perkenalan("Hamdana","Halo");
-
-echo "<hr>";
-
-$saya = "Erril";
-$ucapanSalam = "Selamat Pagi";
-
-// memanggil lagi
-perkenalan($saya);
+echo "Umur saya adalah ". hitungMundur(2005, 2024) . "tahun";
 
 ?>
