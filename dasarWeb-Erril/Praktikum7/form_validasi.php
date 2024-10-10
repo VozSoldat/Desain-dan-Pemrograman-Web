@@ -14,6 +14,10 @@
 
         <label for="email">Email:</label>
         <input type="email" name="email" id="email" required><br><br>
+
+        <label for="password">Password:</label>
+            <input type="password" name="password" id="password required"><br>
+            <span id="password-error" style="color: red;"></span><br><br>
         
         <input type="submit" name="submit" value="Submit">
     </form>
