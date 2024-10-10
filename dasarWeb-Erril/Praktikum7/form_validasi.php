@@ -21,29 +21,43 @@
     <script>
         $(document).ready(function() {
             $("#myForm").submit(function(event) {
+                event.preventDefault();  // Mencegah form dari reload
+
                 var nama = $("#nama").val();
                 var email = $("#email").val();
                 var valid = true;
 
-                if (nama ==="") {
+                // Validasi di sisi klien
+                if (nama === "") {
                     $("#nama-error").text("Nama harus diisi");
                     valid = false;
-                }else{
+                } else {
                     $("#nama-error").text("");
                 }
 
-                if (email ==="") {
+                if (email === "") {
                     $("#email-error").text("Email harus diisi");
                     valid = false;
-                }else{
+                } else {
                     $("#email-error").text("");
                 }
 
-                if (!valid) {
-                    event.preventDefault();
+                if (valid) {
+                    // Mengirim data menggunakan AJAX
+                    $.ajax({
+                        url: "proses_validasi.php",
+                        type: "POST",
+                        data: { nama: nama, email: email },
+                        success: function(response) {
+                            alert("Respons dari server: " + response);
+                        },
+                        error: function(xhr, status, error) {
+                            alert("Terjadi kesalahan: " + error);
+                        }
+                    });
                 }
             });
-        })
+        });
     </script>
 </body>
 
