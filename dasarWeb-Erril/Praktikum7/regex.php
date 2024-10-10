@@ -7,7 +7,7 @@
 // $pattern = '/[a-z]/';
 // $pattern = '/[0-9]+/';
 // $pattern ='/apple/';
-$pattern = '/go?d/';
+$pattern = '/go{1,2}d/';
 // $replacement = 'banana';
 $text = 'god is good.';
 if (preg_match($pattern, $text, $matches)) {
