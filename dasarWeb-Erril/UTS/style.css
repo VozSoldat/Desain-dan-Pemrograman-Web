@@ -50,6 +50,12 @@ nav{
     gap: 50%;
 }
 
+nav> a:hover{
+    cursor: pointer;
+    color: rgb(120, 40, 171);
+    text-decoration: underline;
+}
+
 .tagline{
     margin-top: 10rem;
     display: flex;
@@ -111,4 +117,38 @@ form > #submit{
 
 form > #submit:hover{
     background-color: rgba(120, 40, 171, 0.159);
+}
+
+#tentang{
+    margin: auto 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#tentang > p{
+    font-size: large;
+}
+
+#erril{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    margin-bottom: 1rem;
+}
+
+#erril > span> img{
+    height: 2rem;
+}
+
+#erril >  span{
+    display: flex;
+    flex-direction: row;
+    color: rgb(120, 40, 171);
+}
+
+#erril > span:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }

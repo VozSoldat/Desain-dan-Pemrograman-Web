@@ -3,6 +3,8 @@ var i = 0;
 const images = [
     "./img/arwana1.png",
     "./img/arwana2.jpg",
+    "./img/arwana3.jpg",
+    "./img/arwana4.jpg",
 ]
 
 $(document).ready(function () {

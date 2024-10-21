@@ -1,7 +1,7 @@
 <?php 
 
-$arrayNama = [];
-$arrayEmail = [];
+$pelangganNewsletter['nama'] = [];
+$pelangganNewsletter['email'] = [];
 $pelangganNewsletter = [
     "nama"=>[],
     "email"=>[],
@@ -10,14 +10,12 @@ $pelangganNewsletter = [
 if (isset($_POST)) {
     echo "Terima kasih, anda telah mendaftar";
 
-    array_push($arrayNama, $_POST['nama']);
-    $arrayNama = array_unique($arrayNama);
+    array_push($pelangganNewsletter['nama'], $_POST['nama']);
+    $pelangganNewsletter['nama'] = array_unique($pelangganNewsletter['nama']);
 
     $_POST['email'] = strtolower($_POST['email']);
-    array_push($arrayEmail, $_POST['email']);
-    $arrayEmail = array_unique($arrayEmail); // menghapus email duplikat
+    array_push($pelangganNewsletter['email'], $_POST['email']);
+    $pelangganNewsletter['email'] = array_unique($pelangganNewsletter['email']); // menghapus email duplikat
 
-    echo"{$arrayEmail[0]}{$arrayNama[0]} epoy";
-
-
+    echo"<br>{$pelangganNewsletter['email'][0]}<br>{$pelangganNewsletter['nama'][0]} <br>epoy";
 }
